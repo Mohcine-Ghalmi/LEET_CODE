@@ -34,12 +34,10 @@ public:
             vectIndex.push_back(i);
         bubbleSort(lastVect, vectIndex);
         vector<int> vectToReturn;
-        for (vector<int>::iterator it = vectIndex.begin(); it < vectIndex.end(); it++) {
-            if (*it == k) {
-                vectToReturn.push_back(*it);
+        for (int i = 0; i < vectIndex.size(); i++) {
+            if (i == k)
                 break;
-            }
-            vectToReturn.push_back(*it);
+            vectToReturn.push_back(vectIndex[i]);
         }
         return (vectToReturn);
     }

@@ -24,4 +24,19 @@ Given an integer n, return a string array answer (1-indexed) where:
 
 ## Constraints:
 
-        1 <= n <= 104
+        1 <= n <= 104Example 2:
+
+Input: head = [1], n = 1
+Output: []
+Example 3:
+
+Input: head = [1,2], n = 1
+Output: [1]
+ 
+
+Constraints:
+
+The number of nodes in the list is sz.
+1 <= sz <= 30
+0 <= Node.val <= 100
+1 <= n <= sz

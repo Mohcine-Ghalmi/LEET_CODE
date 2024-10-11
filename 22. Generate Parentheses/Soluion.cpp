@@ -1,8 +1,3 @@
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
 void generateParenthesisHelper(int n, int open, int close, string current, vector<string>& result) {
     if (open == n && close == n) {
         result.push_back(current);
@@ -21,15 +16,4 @@ vector<string> generateParenthesis(int n) {
     string cur;
     generateParenthesisHelper(n, 0, 0, cur,paraenthesis);
     return paraenthesis;
-}
-
-int main(void) {
-    int n;
-
-    cin >> n;
-    vector<string> temp = generateParenthesis(n);
-
-    for (string val : temp)
-        cout << val << endl;
-    return (0);
 }

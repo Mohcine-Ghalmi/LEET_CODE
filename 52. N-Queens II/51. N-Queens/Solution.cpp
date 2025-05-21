@@ -1,8 +1,3 @@
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
 bool checkSafe(vector<vector<string>> &vec, int posx, int posy) {
     int i, j;
 
@@ -50,13 +45,7 @@ vector<vector<string>> solveNQueens(int n) {
     return res;
 }
 
-int main(int argc, char const *argv[]) {
-    vector<vector<string>> solutions = solveNQueens(4);
-    for (const auto& board : solutions) {
-        for (const auto& row : board) {
-            cout << row << " | ";
-        }
-        cout << endl;
-    }
-    return 0;
+int totalNQueens(int n) {
+    vector<vector<string>> res = solveNQueens(n);
+    return res.size();
 }
